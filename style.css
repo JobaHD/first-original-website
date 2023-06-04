@@ -1,0 +1,127 @@
+:root {
+  --main-color: #1b1f3b;
+  --font-color: #9dd1f1;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-color);
+  font-family: Roboto;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+
+.nav-bar {
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  min-width: 80vw;
+}
+
+.nav-bar-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 4em;
+  align-self: flex-end;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  min-width: 80vw;
+}
+
+.intro-info > div {
+  margin: 0.5em;
+}
+
+.feature-section {
+  display: flex;
+  min-width: 80vw;
+  gap: 3.5em;
+  justify-content: space-between;
+}
+
+.feature-title {
+  margin-bottom: 1em;
+}
+
+button {
+  min-width: 7em;
+  min-height: 2em;
+  border-radius: 1em;
+  background-color: var(--font-color);
+  color: var(--main-color);
+  border: none;
+}
+
+/*
+###########################################################################################################################
+
+                                                  CSS for Form
+
+###########################################################################################################################
+*/
+
+fieldset {
+  border: var(--font-color) solid 0.5em;
+  border-radius: 1em;
+  padding: 10%;
+}
+
+fieldset > div > * {
+  font-size: larger;
+}
+
+fieldset > div {
+  margin: 1em;
+}
+
+.checkbox-option-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+div > input,
+textarea {
+  border: var(--font-color) solid 0.25em;
+  border-radius: 1em;
+}
+
+textarea {
+  min-width: 10vw;
+  resize: none;
+}
+
+input[type='checkbox'] {
+  font: inherit;
+  accent-color: var(--font-color);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid var(--font-color);
+  border-radius: 0.15em;
+}
+
+/*
+###########################################################################################################################
+
+                                                  CSS for Projects
+
+###########################################################################################################################
+*/

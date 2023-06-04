@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <a href="Home.html"><h3>Jonathan</h3> </a>
+        </div>
+        <div>
+          <ul class="nav-bar-list">
+            <li><a class="nav-bar-list-item" href="Form.html"> Form </a></li>
+            <li>
+              <a class="nav-bar-list-item" href="Images.html"> Projects </a>
+            </li>
+            <li>
+              <a class="nav-bar-list-item" href="About.html"> History </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <form action="form-handling-url-placeholder" method="post">
+      <fieldset>
+        <h2 class="feature-title">Get in Touch!</h2>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="Occupation">What are you contacting me for:</label>
+          <div class="checkbox-option-wrapper">
+            <div>
+              <input type="checkbox" name="freelance" id="freelance-check" />
+              <label for="freelance-check">Freelance</label>
+            </div>
+            <div>
+              <input type="checkbox" name="internship" id="internship-check" />
+              <label for="internship-check">Internship</label>
+            </div>
+            <div>
+              <input type="checkbox" name="full-time-job" id="job-check" />
+              <label for="job-check">Full Time job</label>
+            </div>
+            <div>
+              <input type="checkbox" name="other" id="other-check" />
+              <label for="other-check">Other</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="description"
+            >Give a small description of your reason:</label
+          >
+          <div>
+            <textarea
+              name="description"
+              id="description-text-area"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
