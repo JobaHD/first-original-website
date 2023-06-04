@@ -1,6 +1,8 @@
 :root {
   --main-color: #1b1f3b;
   --font-color: #9dd1f1;
+  --filter-black-to-font-color: invert(82%) sepia(9%) saturate(1458%)
+    hue-rotate(171deg) brightness(95%) contrast(99%);
 }
 * {
   box-sizing: border-box;
@@ -15,13 +17,19 @@
 header {
   position: sticky;
   top: 0px;
+  box-shadow: 0px 0px 5px 2px black;
+  width: 100vw;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  display: flex;
+  justify-content: center;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5vh;
+  gap: 10vh;
 }
 
 .nav-bar {
@@ -29,6 +37,7 @@ body {
   display: flex;
   justify-content: space-between;
   min-width: 80vw;
+  justify-self: center;
 }
 
 .nav-bar-list {
@@ -38,6 +47,7 @@ body {
   justify-content: space-between;
   gap: 4em;
   align-self: flex-end;
+  padding-left: 10vw;
 }
 
 .main-section {
@@ -52,6 +62,7 @@ body {
 
 .feature-section {
   display: flex;
+  flex-wrap: wrap;
   min-width: 80vw;
   gap: 3.5em;
   justify-content: space-between;
@@ -68,6 +79,11 @@ button {
   background-color: var(--font-color);
   color: var(--main-color);
   border: none;
+  transition: opacity 0.5s;
+}
+
+button:hover {
+  opacity: 0.7;
 }
 
 /*
@@ -125,3 +141,57 @@ input[type='checkbox'] {
 
 ###########################################################################################################################
 */
+.social-icon-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  column-gap: 1em;
+  padding-top: 5vh;
+}
+.sprite {
+  background-image: url(sprite-icon.png);
+  background-repeat: no-repeat;
+  display: block;
+  background-color: transparent;
+  filter: var(--filter-black-to-font-color);
+}
+
+.sprite-discord {
+  width: 240px;
+  height: 240px;
+  background-position: 0 0;
+}
+
+.sprite-email {
+  width: 240px;
+  height: 240px;
+  background-position: 0 -240px;
+}
+
+.sprite-github {
+  width: 240px;
+  height: 240px;
+  background-position: 0 -480px;
+}
+
+.sprite-linkedin {
+  width: 240px;
+  height: 240px;
+  background-position: 0 -720px;
+}
+
+.sprite-indeed {
+  width: 256px;
+  height: 256px;
+  background-position: 0 -960px;
+}
+
+.social-icon-list-wrapper {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 10vh;
+}
+
+.social-icon-body {
+  display: contents;
+}
