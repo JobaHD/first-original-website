@@ -195,3 +195,23 @@ input[type='checkbox'] {
 .social-icon-body {
   display: contents;
 }
+
+/*
+###########################################################################################################################
+
+                                                  CSS for Projects
+
+###########################################################################################################################
+*/
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.project-image {
+  width: 100px;
+  height: 100px;
+}
