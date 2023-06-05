@@ -212,6 +212,5 @@ input[type='checkbox'] {
 }
 
 .project-image {
-  width: 100px;
-  height: 100px;
+  max-width: 30vw;
 }
